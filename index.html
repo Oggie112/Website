@@ -45,8 +45,9 @@
         </div>
     </div>
     <div id="container-2">
-        <section id="section-1">
-            <a class="arrows" href="#section-3"><i class="fa-solid fa-arrow-left"></i></a>
+        <button id="left" ><i class="fa-solid fa-arrow-left"></i></button>
+        <div id="carousel">
+        <section id="section-1" class="sections">   
             <div class="item">
                 <p class="pics">
                     Block Breaker Game
@@ -57,7 +58,7 @@
                     Block Breaker. The app allows you to switch between the different game modes and is made with only Html, Css and 
                     Javascript
                 </p>
-                <button class="project-buttons">Learn More on Github</button>
+                <button class="project-buttons" type="button" value="https://github.com/Oggie112/Ball-Game/tree/main" onclick="handleClick(this.value)">Learn More on Github</button>
                 </div> 
             </div>
             <div class="item">
@@ -70,13 +71,11 @@
                     It allows the user to either click or use the keyboard to create the sounds as well as having a toggle
                     buton to allow the user to switch to a different sound set.
                 </p>
-                <button class="project-buttons">Learn More on Github</button>
+                <button class="project-buttons" type="button">Learn More on Github</button>
                 </div>
             </div>
-            <a class="arrows" href="#section-2"><i class="fa-solid fa-arrow-right"></i></a>
         </section>
-        <section id="section-2">
-            <a class="arrows" href="#section-1"><i class="fa-solid fa-arrow-left"></i></a>
+        <section id="section-2" class="sections">
             <div class="item">
                 <p class="pics">
                     25 + 5 Clock App
@@ -102,10 +101,8 @@
                     <button class="project-buttons">Learn More on Github</button>
                 </div>
             </div>
-            <a class="arrows" href="#section-3"><i class="fa-solid fa-arrow-right"></i></a>
         </section>
-        <section id="section-3">
-            <a class="arrows" href="#section-2"><i class="fa-solid fa-arrow-left"></i></a>
+        <section id="section-3" class="sections">
             <div class="item">
                 <p class="pics">
                     Random Quote Machine
@@ -130,8 +127,9 @@
                     </div>
 
             </div>
-            <a class="arrows" href="#section-1"><i class="fa-solid fa-arrow-right"></i></a>
         </section>
+        </div>
+        <button id="right"><i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <div id="container-3">
         <h1>Contact Me!</h1>
@@ -172,4 +170,5 @@
         </div>
     </div>
     </div>
+    <script src="index.js" defer></script>
     </body>

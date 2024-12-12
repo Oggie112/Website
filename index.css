@@ -5,28 +5,39 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    background: #006a3f;
+}
 #container-1 {
     width: 100%;
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #container-2 {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1%;
+}
+#carousel {
+    width: 100%;
     height: 100vh;
-    background-color: peru;
+    background-color: transparent;
     display: grid;
-    grid-template-columns: repeat(3,100%);
-    overflow:hidden;
-    scroll-behavior: smooth;
-    z-index: -1;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
 }
 #container-3 {
     width: 100%;
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,12 +46,11 @@ html {
     padding: 20px;
 }
 #navbar {
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: gray;
     z-index: 5;
 }
 ul {
@@ -49,12 +59,15 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    background-color: #006a3f;
 }
 li {
-    border-left: 1px solid white;
     width: 33%;
     height: 100%;
     padding: 10px;
+    box-sizing: border-box;
+    border-bottom: solid #6A002B 5px;
+    transition: all ease 1s;
 }
 a {
     display: block;
@@ -65,7 +78,7 @@ a {
     width: 100%;
 }
 li:hover {
-    background-color: aquamarine;
+    background-color: #6A002B;
 }
 #footer {
     width: 100%;
@@ -120,7 +133,7 @@ li:hover {
 }
 section {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -158,7 +171,7 @@ section {
     opacity: 0;
     
 }
-.arrows {
+#left, #right {
     height: 100px;
     width: 100px;
     text-align: center;
@@ -168,6 +181,7 @@ section {
     border-radius: 10px;
     font-size: 3em;
     transition: all 1s ease-in-out;
+    z-index: 10;
 }
 .arrows:hover {
     transform: scale(1.4);
@@ -253,18 +267,19 @@ section {
     gap: 4%;
     width: 300px;
     height: 300px;
-    border: black solid 2px;
+    border: white solid 3px;
     border-radius: 150px;
     overflow: hidden;
+    background-color: white;
 }
 .icon {
     width: 90%;
     height: 90%;
-    background-color: blueviolet;
+    background-color: #423030;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .icon:hover {
-    background-color: blue;   
+    background-color: #6A002B;   
 }
