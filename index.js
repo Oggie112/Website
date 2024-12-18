@@ -66,4 +66,6 @@ const getOrder = (elem) => {
         Subject: ${data.subject}\n
         Message: ${data.message}`)
 };
-form.addEventListener("submit", handleFromSubmit)
+form.addEventListener("submit", handleFromSubmit);
+//consider making the sections in container-2 dynamically via JS;
+// link to FreeCodeCamp profile?
