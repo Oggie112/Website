@@ -28,15 +28,19 @@
             Hola Brother!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         </div>
         <div id="david">
-            <img id="pic" src="Images\Profile-pic-zoom.jpg"/>
+            <img id="pic" src="Images\Profile-pic-zoom.jpg" alt="David in the countryside with his arms up in the air"/>
         </div>
         <div id="skill-wrapper">
             <h2>Technical Skills</h2>
             <div id="skills">
-                <i class="fa-brands fa-html5 fa-4x"></i>
-                <i class="fa-brands fa-js fa-4x"></i>
-                <i class="fa-brands fa-css fa-4x"></i>
-                <i class="fa-brands fa-react fa-4x"></i>
+                I first started learning Html and Css on FreeCodeCamp in late 2021. I then proceeded to learn Javascript via FreeCodeCamp and 
+Eloquent Javascript by Marijn Haverbeke. Once I had a basic understanding of Javascript I began to use FreeCodeCamp to learn
+React as well as Redux. I have since created a number of projects using both vanilla Javascript, React and Redux which you 
+can check out in the projects section. I have recently learnt about D3, a javscript library for dynamic data visualisation, 
+and SVG to allow for greater data visualistion and customability in my projects. I am currently studying Bash and PostgreSQL
+to further my knowledge of relational databases. I have used source control features such as Git and Github for a number of my latest 
+projects and have become comfortable in using it to ensure a clear history of any changes in the code. In the future I would love 
+to start learning another language, most likely Python. 
             </div>
         </div>
         </div>
@@ -58,7 +62,8 @@
                     Block Breaker. The app allows you to switch between the different game modes and is made with only Html, Css and 
                     Javascript
                 </p>
-                <button class="project-buttons" type="button" value="https://github.com/Oggie112/Ball-Game/tree/main" onclick="handleClick(this.value)">Learn More on Github</button>
+                <button class="project-buttons" type="button" value="https://github.com/Oggie112/Ball-Game/tree/main"
+                 onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                 </div> 
             </div>
             <div class="item">
@@ -71,7 +76,8 @@
                     It allows the user to either click or use the keyboard to create the sounds as well as having a toggle
                     buton to allow the user to switch to a different sound set.
                 </p>
-                <button class="project-buttons" type="button">Learn More on Github</button>
+                <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/NWYWJBj"
+                onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                 </div>
             </div>
         </section>
@@ -87,7 +93,8 @@
                             previous time length and continue to count down. This is based of the Pomodoro work method which is meant to improve productivity
                             and reduce procrastination. This method involves working for roughly 25 minutes before taking a short 5 minute break.
                         </p>
-                        <button class="project-buttons">Learn More on Github</button>
+                        <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/qBGoYwj"
+                        onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                     </div>
             </div>
             <div class="item">
@@ -98,7 +105,8 @@
                     <p>  
                         A Calculator app created with React allowing the user to input and calclate their own sums.
                     </p>
-                    <button class="project-buttons">Learn More on Github</button>
+                    <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/MWVMVby"
+                    onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                 </div>
             </div>
         </section>
@@ -111,7 +119,8 @@
                         <p>  
                             An app that displays a random quote every time the user request one. Made with React.
                         </p>
-                        <button class="project-buttons">Learn More on Github</button>
+                        <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/OJQwOpO"
+                        onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                     </div>
             </div>
             <div class="item">
@@ -123,9 +132,36 @@
                             A simple Markdown editor built using React that allows the user to make changes to the editor and then preview the 
                             result. Both the editor and previewer can be expanded or minimised. 
                         </p>
-                        <button class="project-buttons">Learn More on Github</button>
+                        <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/bGLPrMG"
+                        onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
                     </div>
-
+            </div>
+        </section>
+        <section id="section-4" class="sections">
+            <div class="item">
+                <p class="pics">
+                    Choropleth of the USA
+                    </p>
+                    <div class="project-info">
+                        <p>  
+                            A choropleth graph of the attainment of a Bachelor degree or higher education by county.
+                            Made using D3, Javascript, Css, html & Svg. 
+                        </p>
+                        <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/ZEdKKZR"
+                        onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
+                    </div>
+            </div>
+            <div class="item">
+                <p class="pics">
+                    Heatgraph of global temps
+                    </p>
+                    <div class="project-info">
+                        <p>  
+                            Heatgraph of monthly global land surface temperature by year. Made using D3, Javascript, Css, html & Svg. 
+                        </p>
+                        <button class="project-buttons" type="button" value="https://codepen.io/Oggie112/full/QWXOzVm"
+                        onclick="handleClick(this.value)">Learn More on Github or CodePen</button>
+                    </div>
             </div>
         </section>
         </div>
@@ -142,27 +178,27 @@
                 <h2>Send me a message using the form below:</h2>
                 <form id="contactForm" name="contactForm" action="" method="post">
                     <label for="Name"></label>
-                    <input class="inputs" type="text" id="name" placeholder="Name"/>
+                    <input class="inputs" type="text" id="name" name="name" placeholder="Your Name" />
                     <label for="Email"></label>
-                    <input class="inputs" type="text" id="email" placeholder="Email"/>
+                    <input class="inputs" type="text" id="subject" name="subject" placeholder="Subject"/>
                     <label for="Message"></label>
-                    <textarea type="text" id="message" placeholder="Message" class="inputs"></textarea>
-                    <button class="inputs">Submit</button>
+                    <textarea type="text" id="message" name="message" placeholder="Message" class="inputs"></textarea>
+                    <input type="submit" class="inputs" value="Submit"/>
                 </form>
             </div>
         <div id="social-container">
             <h2>Check out my socials</h2>
             <div id ="socials">
-            <a class="icon">
+            <a class="icon" href="https://github.com/Oggie112" target="_blank">
                 Github
             </a>
-            <a class="icon">
+            <a class="icon" href="https://x.com/DavidOggie" target="_blank">
                 Twitter
             </a>
-            <a class="icon">
+            <a class="icon" href="https://codepen.io/Oggie112/pens/" target="_blank">
                 CodePen
             </a>
-            <a class="icon">
+            <a class="icon" href="https://www.instagram.com/davidoggie/" target="_blank">
                 Instagram
             </a>
         </div>

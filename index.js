@@ -25,14 +25,15 @@ const getOrder = (elem) => {
   slides.forEach((x, i) => {
     x.style.order = i + 1;
   })
+  console.log(slides)
   
   const moveRight = _ => {
     slides.forEach(function(slide) {
       order = getOrder(slide)
-      if (order < slides.length) {
-        slide.style.order = order += 1;
+      if (order > 1) {
+        slide.style.order = order -= 1;
       } else {
-        slide.style.order = 1;
+        slide.style.order = 4;
       }
     });
   }
@@ -42,13 +43,27 @@ const getOrder = (elem) => {
   const moveLeft = _ => {
     slides.forEach(function(slide) {
       order = getOrder(slide)
-      if (order > 1) {
-        slide.style.order = order -= 1;
+      if (order < slides.length) {
+        slide.style.order = order += 1;
       } else {
-        slide.style.order = 3;
+        slide.style.order = 1;
       }
     });
   }
   leftButton.addEventListener('click', _ => {
     moveLeft();
   });
+  // form 
+  let form = document.getElementById("contactForm");
+  function handleFromSubmit(event) {
+    event.preventDefault()
+    let formData = new FormData(event.target);
+    let data = {};
+    for (var [key, value] of formData.entries()) { 
+        data[key] = value ;
+    };
+    alert(`Sorry ${data.name}, this feature is coming soon! Please send your message to _____.\n
+        Subject: ${data.subject}\n
+        Message: ${data.message}`)
+};
+form.addEventListener("submit", handleFromSubmit)
